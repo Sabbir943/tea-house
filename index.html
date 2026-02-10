@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- style css -->
+    <style>
+        * {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
     <title>Tea House</title>
 </head>
-<body>
-    
+
+<body class="" >
+    <!-- banner section -->
+    <section class="grid-cols-1 md:grid md:grid-cols-2  max-w-5xl mx-auto mt-[60px] ">
+        <div class="banner-left space-y-5 ">
+            <h1 class="text-[40px] md:text-[70px] font-bold">It's good <br>
+                tea time at The Tea House</h1>
+            <p class="text-[#777777]">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+            <button class="py-2 px-6 rounded-md text-white font-bold bg-linear-to-r from-[#FF8938] to-[#FF0000]">Explore More
+                <span class="-rotate-45 inline-block"><i class="fa-solid fa-arrow-right"></i></span>
+            </button>
+        </div>
+        <div class="banner-right flex justify-end items-end relative">
+          <img src="./images/banner.png" alt="">
+          <div class="flex flex-row bg-white justify-center gap-3 rounded-md shadow-xl items-center absolute left-10 bottom-4 p-5">
+            <img class="w-[48px] h-[48px]" src="./images/star.png" alt="">
+            <div>
+                <h1 class="font-extrabold text-[20px]">5.00</h1>
+                <p class="text-[#777777]">Trust Pilot Ratings</p>
+            </div>
+          </div>
+        </div>
+    </section>
 </body>
+
 </html>
